@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Beer-Ninja</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: none;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto;
+      background: #000;
+      touch-action: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="844" height="390"></canvas>
+  <script src="script.js"></script>
+  <script>
+    document.body.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+  </script>
+</body>
+</html>
